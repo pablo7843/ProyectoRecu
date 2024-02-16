@@ -1,0 +1,230 @@
+   /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #2e2e2e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#canvasDiv {
+    border: 5px solid white;
+    margin-bottom: 20px;
+    background-color: #006400; /* Color verde oscuro similar al tapete de un casino */
+}
+
+canvas {
+    display: block;
+    background-color: #006400;
+}
+
+#botones {
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#reset {
+    display: none; /* Asegura que el botón esté inicialmente oculto */
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    background-color: #e64a19;
+}
+
+
+#info {
+    font-size: 1.2em;
+    padding: 10px;
+    border-top: 2px solid white;
+    width: 100%;
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url("/Proyecto Js/imagenes/background.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.dinero{
+    right: 0;
+}
+
+.contenedor h1{
+    text-align: center;
+    font-size: 55px;
+}
+
+.contenedor .input-div{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-div input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-div input::placeholder{
+    color: black;
+}
+
+.input-div i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.contenedor .recordar-contraseña{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.recordar-contraseña label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.recordar-contraseña a{
+    color: black;
+    text-decoration: none;
+}
+
+.recordar-contraseña a:hover{
+    text-decoration: underline;
+}
+
+.contenedor .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline:none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.contenedor .registrar{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registrar p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrar p a:hover{
+    text-decoration: underline;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
